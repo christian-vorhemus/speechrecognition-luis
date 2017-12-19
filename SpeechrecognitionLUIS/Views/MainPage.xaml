@@ -1,0 +1,50 @@
+﻿<Page x:Class="SpeechrecognitionLUIS.Views.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Behaviors="using:Template10.Behaviors"
+      xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
+      xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
+      xmlns:controls="using:Template10.Controls"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:SpeechrecognitionLUIS.Views"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:vm="using:SpeechrecognitionLUIS.ViewModels" mc:Ignorable="d">
+
+    <Page.DataContext>
+        <vm:MainPageViewModel x:Name="ViewModel" />
+    </Page.DataContext>
+
+    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <controls:PageHeader x:Name="pageHeader" RelativePanel.AlignLeftWithPanel="True"
+                             RelativePanel.AlignRightWithPanel="True"
+                             RelativePanel.AlignTopWithPanel="True" Text="Speech weather service with LUIS.ai">
+        </controls:PageHeader>
+
+
+
+
+        <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" Text="{x:Bind ViewModel.Value, Mode=OneWay}" 
+                           Margin="0,140,0,-140" FontSize="28"
+                           Foreground="Black"/>
+
+
+        <StackPanel RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="0,0.5,0,0">
+            <TextBlock Text="Ask for weather ('Weather forecast for Chicago tomorrow')" 
+                           Margin="0,0,0,10" FontSize="20"
+                           Foreground="Black"/>
+            <Button Background="Transparent" Click="{x:Bind ViewModel.StartRecognizing_Click}" HorizontalAlignment="Center" Height="173" Width="173">
+                <StackPanel>
+                    <Border CornerRadius="90" 
+                    Background="Transparent" 
+                    BorderBrush="Black" 
+                    BorderThickness="3" Height="156">
+                        <Image Source="../Assets/mic.png" />
+                    </Border>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+      
+
+    </RelativePanel>
+</Page>

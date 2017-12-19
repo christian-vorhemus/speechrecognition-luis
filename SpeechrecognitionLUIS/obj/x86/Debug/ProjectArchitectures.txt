@@ -1,0 +1,1 @@
+C:\Users\chvorhem\Source\Repos\speechrecognition-luis\SpeechrecognitionLUIS\SpeechrecognitionLUIS.csproj;x86

@@ -1,0 +1,270 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "WeatherRecognizer",
+  "desc": "This LUIS app recognizes commands for weather forecasts",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "GetTemperature"
+    },
+    {
+      "name": "GetWeather"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "City"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [
+    "datetimeV2"
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "weather in seattle",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "City",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "what is the weather like today?",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "will it rain tomorrow?",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "will it be sunny tomorrow?",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "tell me about the weather",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "what's the weather tomorrow?",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "do i need an umbrella today?",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "temperature",
+      "intent": "GetTemperature",
+      "entities": []
+    },
+    {
+      "text": "whats the weather like?",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "will it be cold tomorrow?",
+      "intent": "GetTemperature",
+      "entities": []
+    },
+    {
+      "text": "will it be sunny in paris tomorrow?",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "City",
+          "startPos": 20,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "get weather now",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "do i need a coat tomorrow?",
+      "intent": "GetTemperature",
+      "entities": []
+    },
+    {
+      "text": "do i need a jacket tomorrow?",
+      "intent": "GetTemperature",
+      "entities": []
+    },
+    {
+      "text": "weather in london in september",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "City",
+          "startPos": 11,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather forecast for redmond",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "City",
+          "startPos": 33,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "what will be the weather in vienna today",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "City",
+          "startPos": 28,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "weather report!",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "does it rain in austin?",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "City",
+          "startPos": 16,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather forecast for berlin",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "City",
+          "startPos": 33,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "whats the forecast for amsterdam",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "City",
+          "startPos": 23,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "whats the temperature in paris?",
+      "intent": "GetTemperature",
+      "entities": [
+        {
+          "entity": "City",
+          "startPos": 25,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "degree celsius in berlin?",
+      "intent": "GetTemperature",
+      "entities": [
+        {
+          "entity": "City",
+          "startPos": 18,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "degree celsius",
+      "intent": "GetTemperature",
+      "entities": []
+    },
+    {
+      "text": "degree fahrenheit",
+      "intent": "GetTemperature",
+      "entities": []
+    },
+    {
+      "text": "temperature in zurich",
+      "intent": "GetTemperature",
+      "entities": [
+        {
+          "entity": "City",
+          "startPos": 15,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "get temperature for miami",
+      "intent": "GetTemperature",
+      "entities": [
+        {
+          "entity": "City",
+          "startPos": 20,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "what is the weather like in milano tomorrow?",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "City",
+          "startPos": 28,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "weather forecast for the next days",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "give me the weather forecast for the next week",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "forecast for the next days",
+      "intent": "GetWeather",
+      "entities": []
+    },
+    {
+      "text": "whats the 10 day forecast?",
+      "intent": "GetWeather",
+      "entities": []
+    }
+  ]
+}
