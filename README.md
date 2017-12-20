@@ -45,3 +45,7 @@ Open "SpeechrecognitionLUIS.sln" and go to "ViewModels/MainPageViewModel.cs".
 Replace luisAppId, subscriptionKey, openweathermapKey with your own values. Build the project.
 
 When the app opens, click on the microphone icon and ask a weather related question (e.g. "What's the weather in Vienna today?"). Make sure that your device has a microphone.
+
+## Additional Information
+
+This app uses Template 10. If you want to find out more about T10, take a look at this [MVA course](https://mva.microsoft.com/en-us/training-courses/getting-started-with-template-10-16336).
